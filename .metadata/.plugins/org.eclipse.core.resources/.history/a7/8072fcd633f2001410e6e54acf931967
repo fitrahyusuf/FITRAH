@@ -1,0 +1,18 @@
+package com.fitrah.tampilanGambar;
+
+
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+
+//public class TampilanGambar extends ActionBarActivity {
+	public class TampilanGambar extends Activity {
+
+    @Override
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+	}
+}

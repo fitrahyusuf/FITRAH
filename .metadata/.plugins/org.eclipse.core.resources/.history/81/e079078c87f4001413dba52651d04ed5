@@ -1,0 +1,5 @@
+package com.fitrah.mengenalselectionwidget;
+
+public class Seleksi extends ListActivity{
+	
+}

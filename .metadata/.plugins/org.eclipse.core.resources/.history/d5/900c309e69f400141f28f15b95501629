@@ -1,0 +1,11 @@
+package com.fitrah.playingaudio;
+
+import android.app.Activity;
+
+public class PlayingAudio extends Activity {
+	ImageButton mainkan;
+	TextView keterangan;
+	MediaPlayer mp;
+	
+	
+}

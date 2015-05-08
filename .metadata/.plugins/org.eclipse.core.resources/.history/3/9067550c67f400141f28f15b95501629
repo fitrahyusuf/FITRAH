@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:textSize="15px"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="wrap_content"
+        	  android:id="@+id/textView"
+        	  android:text="Memainkan Musik"
+        ></TextView>
+    <ImageButton  android:id="@+id/putarMusik"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:src="@drawable/play"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="fill_parent">
+      </ImageButton>
+   		
+</LinearLayout>

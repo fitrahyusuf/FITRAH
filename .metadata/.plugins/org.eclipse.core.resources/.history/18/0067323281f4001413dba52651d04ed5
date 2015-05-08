@@ -1,0 +1,34 @@
+package com.fitrah.playingaudio;
+
+import android.app.Activity;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+public class PlayingAudio extends Activity{
+	ImageButton mainkan;
+	TextView keterangan;
+	MediaPlayer mp;
+		
+	/** called when the activity is first createrd. */
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState){
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.main);
+			keterangan = (TextView)findViewById(R.id.ket);
+			keterangan.setText("Silahakan klik tombol play");
+			mainkan=(ImageButton)findViewById(R.id.putarMusik);
+			mainkan.setOnClickListener(new OnClickListener(){
+				public void onClick(View arg0){
+					mainkan.setEnabled(false);
+					keterangan.setText("Tombol play tidak aktif");
+					go();
+				}
+			});
+			
+	}
+}

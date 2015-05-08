@@ -1,0 +1,35 @@
+package com.fitrah.mengenalspincontrol;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.text.TextWatcher;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.TextView;
+
+public class AutoComplete extends Activity implements TextWatcher{
+	TextView seleksi;
+	AutoCompleteTextView edit;
+	String[] item={ "Merbabu","Merapi","Lawu","Rinjani","Sumbing",
+					"Sindoro","Krakatau","Selat Sunda","Selat Bali",
+					"Selat Malaka","Kalimantan","Sulawesi","Jawa"};
+		@Override
+		public void onCreate(Bundle savedInstanceState){
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.main);
+			
+			seleksi=(TextView) findViewById(R.id.seleksi);
+			edit=(AutoCompleteTextView)findViewById(R.id.edit);
+			edit.addTextChangedListener(this);
+			edit.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,item));
+	}
+		public void onTextChanged(CharSequence s,int start,int before, int count){
+			seleksi.setText(edit.getText());
+		}
+		public void beforeTextChanged(CharSequence s, int start, int count, int after){
+			
+		}
+		public void afterTextChanged(Editable s){
+			
+		}
+}

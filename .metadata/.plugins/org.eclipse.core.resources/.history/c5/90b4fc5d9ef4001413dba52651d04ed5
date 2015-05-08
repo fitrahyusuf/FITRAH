@@ -1,0 +1,28 @@
+package com.example.membuatcheckbox2;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+
+public class CheckBox1 extends Activity implements onCheckedChangeListener {
+	CheckBox cb;
+	
+	/** processed when first called */
+	@Override
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		cb=(CheckBox1) findViewById(R.id.check);
+		cb.setOnCheckedChangeListener(this);
+		
+	}
+
+	public void onCheckedChanged(CompoundButton buttonView, boolean isChecked ){
+		if(isChecked){
+			cb.setText("checkBox ini : Dicentang!");
+		}else{
+			cb.set
+		}
+	}
+}

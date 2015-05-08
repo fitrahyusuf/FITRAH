@@ -1,0 +1,14 @@
+package com.fitrah.mengenalspincontrol;
+
+import android.app.Activity;
+import android.text.TextWatcher;
+
+public class AutoComplete extends Activity implements TextWatcher{
+	TextView seleksi;
+	AutoCompleteTextView edit;
+	String[] item={ "Merbabu","Merapi","Lawu","Rinjani","Sumbing",
+					"Sindoro","Krakatau","Selat Sunda","Selat Bali",
+					"Selat Malaka","Kalimantan","Sulawesi","Jawa"};
+					
+	}
+}

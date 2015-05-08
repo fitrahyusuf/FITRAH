@@ -1,0 +1,12 @@
+package com.fitrah.membuatexit;
+
+import android.app.Activity;
+import android.text.TextWatcher;
+
+
+
+public class TombolExit extends Activity implements TextWatcher {
+	/** Called when the activity is first created. */
+	private Button keluar;
+	
+}

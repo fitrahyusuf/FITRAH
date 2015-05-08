@@ -1,0 +1,13 @@
+package com.fitrah.mengenalselectionwidget;
+
+import android.app.ListActivity;
+
+public class Seleksi extends ListActivity{
+	/** Called when the activity is first created. */
+	TextView Seleksi;
+	String[] pilihan={
+			"Merbabu","Merapi","Lawu","Rinjani","Sumbing",
+			"Sindoro","Krakatau","Selat Sumda","Selat bali","Selat Malaka",
+			"Kalimanatan","Sulawesi","Jawa"
+	};
+}
